@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include istiqdam_integration *.css
+recursive-include istiqdam_integration *.csv
+recursive-include istiqdam_integration *.html
+recursive-include istiqdam_integration *.ico
+recursive-include istiqdam_integration *.js
+recursive-include istiqdam_integration *.json
+recursive-include istiqdam_integration *.md
+recursive-include istiqdam_integration *.png
+recursive-include istiqdam_integration *.py
+recursive-include istiqdam_integration *.svg
+recursive-include istiqdam_integration *.txt
+recursive-exclude istiqdam_integration *.pyc
