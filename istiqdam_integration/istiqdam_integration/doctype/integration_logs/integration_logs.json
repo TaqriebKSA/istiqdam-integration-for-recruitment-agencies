@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-07-21 12:17:48.472388",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "reference_entry",
+  "api_url",
+  "request",
+  "column_break_wjeo",
+  "request_time",
+  "response_time",
+  "response"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "reference_entry",
+   "fieldtype": "Data",
+   "label": "Reference Entry"
+  },
+  {
+   "fieldname": "api_url",
+   "fieldtype": "Data",
+   "label": "Api URL"
+  },
+  {
+   "fieldname": "request",
+   "fieldtype": "Long Text",
+   "label": "Request"
+  },
+  {
+   "fieldname": "column_break_wjeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "request_time",
+   "fieldtype": "Datetime",
+   "label": "Request Time"
+  },
+  {
+   "fieldname": "response_time",
+   "fieldtype": "Datetime",
+   "label": "Response Time"
+  },
+  {
+   "fieldname": "response",
+   "fieldtype": "Long Text",
+   "label": "Response"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2025-07-24 12:59:23.222029",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Integration Logs",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
