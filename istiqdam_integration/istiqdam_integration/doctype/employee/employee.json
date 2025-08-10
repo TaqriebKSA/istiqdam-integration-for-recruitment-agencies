@@ -1,0 +1,205 @@
+{
+ "actions": [],
+ "autoname": "field:id",
+ "creation": "2025-08-04 14:15:56.484707",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "id",
+  "iqama",
+  "national_id",
+  "column_break_duvj",
+  "full_name",
+  "gender",
+  "nationality",
+  "occupation",
+  "date_of_birth",
+  "address_tab",
+  "city",
+  "district",
+  "postal_code",
+  "column_break_hmsg",
+  "address",
+  "tab_3_tab",
+  "phone_number",
+  "email",
+  "mobile",
+  "column_break_gcgn",
+  "second_mobile",
+  "home",
+  "work",
+  "redirect"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "iqama",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Iqama",
+   "reqd": 1
+  },
+  {
+   "fieldname": "national_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "National ID"
+  },
+  {
+   "fieldname": "column_break_duvj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Nationality",
+   "options": "Nationality",
+   "reqd": 1
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Occupation",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "address_tab",
+   "fieldtype": "Tab Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "tab_3_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "column_break_gcgn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_mobile",
+   "fieldtype": "Data",
+   "label": "Second Mobile"
+  },
+  {
+   "fieldname": "home",
+   "fieldtype": "Data",
+   "label": "Home"
+  },
+  {
+   "fieldname": "work",
+   "fieldtype": "Data",
+   "label": "Work"
+  },
+  {
+   "fieldname": "redirect",
+   "fieldtype": "Data",
+   "label": "Redirect"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "postal_code",
+   "fieldtype": "Data",
+   "label": "Postal Code"
+  },
+  {
+   "fieldname": "column_break_hmsg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-04 16:47:32.122800",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Employee",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
