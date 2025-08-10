@@ -1,0 +1,292 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 16:14:43.114201",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_tab",
+  "contract_id",
+  "start_at",
+  "activated_at",
+  "creation_date",
+  "end_at",
+  "customer",
+  "column_break_fhdw",
+  "employee",
+  "employee_name",
+  "employee_dob",
+  "special_specification",
+  "job_type",
+  "monthly_income",
+  "package",
+  "status",
+  "payments_section",
+  "discount_percentage",
+  "column_break_dptq",
+  "payment_method",
+  "section_break_tnjt",
+  "payment_details",
+  "commitments_section",
+  "first_party",
+  "notice_period",
+  "replacement_times",
+  "column_break_shcy",
+  "second_party",
+  "administrive_fee_percent",
+  "laborer_transportation_costs",
+  "terminationfee",
+  "travel_accompaniment_days",
+  "travel_accompaniment_hours",
+  "points_section",
+  "transaction_before",
+  "transaction_after",
+  "column_break_piqv",
+  "transaction_value"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_id",
+   "fieldtype": "Data",
+   "label": "Contract ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_at",
+   "fieldtype": "Datetime",
+   "label": "Start At",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fhdw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "label": "Employee Name"
+  },
+  {
+   "fetch_from": "employee.date_of_birth",
+   "fetch_if_empty": 1,
+   "fieldname": "employee_dob",
+   "fieldtype": "Read Only",
+   "label": "Employee DOB"
+  },
+  {
+   "fieldname": "package",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Package",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payments_section",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "fieldname": "discount_percentage",
+   "fieldtype": "Int",
+   "label": "Discount Percentage"
+  },
+  {
+   "fieldname": "column_break_dptq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_method",
+   "fieldtype": "Data",
+   "label": "Payment Method"
+  },
+  {
+   "fieldname": "section_break_tnjt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Table",
+   "label": "Payment Details",
+   "options": "Payment Details"
+  },
+  {
+   "fieldname": "commitments_section",
+   "fieldtype": "Section Break",
+   "label": "Commitments"
+  },
+  {
+   "fieldname": "notice_period",
+   "fieldtype": "Int",
+   "label": "Notice Period"
+  },
+  {
+   "fieldname": "replacement_times",
+   "fieldtype": "Int",
+   "label": "Replacement Times"
+  },
+  {
+   "fieldname": "first_party",
+   "fieldtype": "Heading",
+   "label": "First Party"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nReady To Sync\nSynced"
+  },
+  {
+   "fieldname": "column_break_shcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_party",
+   "fieldtype": "Heading",
+   "label": "Second Party"
+  },
+  {
+   "fieldname": "administrive_fee_percent",
+   "fieldtype": "Int",
+   "label": "Administrive Fee Percent"
+  },
+  {
+   "fieldname": "laborer_transportation_costs",
+   "fieldtype": "Int",
+   "label": "Laborer Transportation Costs"
+  },
+  {
+   "fieldname": "terminationfee",
+   "fieldtype": "Currency",
+   "label": "Termination Fee"
+  },
+  {
+   "fieldname": "travel_accompaniment_days",
+   "fieldtype": "Int",
+   "label": "Travel Accompaniment Days"
+  },
+  {
+   "fieldname": "travel_accompaniment_hours",
+   "fieldtype": "Int",
+   "label": "Travel Accompaniment Hours"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "activated_at",
+   "fieldtype": "Date",
+   "label": "Activated At"
+  },
+  {
+   "fieldname": "creation_date",
+   "fieldtype": "Date",
+   "label": "Creation Date"
+  },
+  {
+   "fieldname": "end_at",
+   "fieldtype": "Date",
+   "label": "End At"
+  },
+  {
+   "fieldname": "points_section",
+   "fieldtype": "Section Break",
+   "label": "Points"
+  },
+  {
+   "fieldname": "transaction_before",
+   "fieldtype": "Int",
+   "label": "Transaction Before"
+  },
+  {
+   "fieldname": "transaction_after",
+   "fieldtype": "Int",
+   "label": "Transaction After"
+  },
+  {
+   "fieldname": "column_break_piqv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "transaction_value",
+   "fieldtype": "Int",
+   "label": "Transaction Value"
+  },
+  {
+   "fieldname": "basic_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "special_specification",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Special Specification",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Type",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "monthly_income",
+   "fieldtype": "Currency",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Monthly Income",
+   "options": "Employee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-10 09:35:30.718316",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
