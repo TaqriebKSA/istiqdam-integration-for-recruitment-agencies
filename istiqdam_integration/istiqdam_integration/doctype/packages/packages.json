@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:package_id",
+ "creation": "2025-08-04 14:57:18.923019",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "package_id",
+  "activation_date",
+  "created_at",
+  "updated_at",
+  "expiry_date",
+  "position",
+  "column_break_vard",
+  "down_payment",
+  "establishment_number",
+  "status",
+  "link",
+  "gender",
+  "nationality",
+  "occupation",
+  "duration_section",
+  "duration_type",
+  "column_break_unyd",
+  "duration_value",
+  "price_details_section",
+  "gross_price",
+  "net_price",
+  "column_break_slnm",
+  "vat_amount",
+  "price_specifications_section",
+  "price_specification_id",
+  "price_specification_type",
+  "price_specification_name_en",
+  "price_specification_name_ar",
+  "column_break_jksj",
+  "price_specification_gross",
+  "price_specification_net",
+  "price_specification_vat",
+  "payments_section",
+  "payments"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Date",
+   "label": "Activation Date"
+  },
+  {
+   "fieldname": "column_break_vard",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "package_id",
+   "fieldtype": "Data",
+   "label": "Package ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "created_at",
+   "fieldtype": "Date",
+   "label": "Created At"
+  },
+  {
+   "fieldname": "updated_at",
+   "fieldtype": "Date",
+   "label": "Updated At"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "down_payment",
+   "fieldtype": "Currency",
+   "label": "Down Payment"
+  },
+  {
+   "fieldname": "establishment_number",
+   "fieldtype": "Int",
+   "label": "Establishment Number"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Data",
+   "label": "Link"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Link",
+   "label": "Occupation",
+   "options": "Occupation"
+  },
+  {
+   "fieldname": "duration_section",
+   "fieldtype": "Section Break",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "column_break_unyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_details_section",
+   "fieldtype": "Section Break",
+   "label": "Price Details"
+  },
+  {
+   "fieldname": "gross_price",
+   "fieldtype": "Currency",
+   "label": "Gross Price"
+  },
+  {
+   "fieldname": "net_price",
+   "fieldtype": "Currency",
+   "label": "Net Price"
+  },
+  {
+   "fieldname": "column_break_slnm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_amount",
+   "fieldtype": "Currency",
+   "label": "VAT Amount"
+  },
+  {
+   "fieldname": "payments_section",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "fieldname": "payments",
+   "fieldtype": "Table",
+   "label": "Payments",
+   "options": "Package Payments"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Position",
+   "options": "Position"
+  },
+  {
+   "fieldname": "price_specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Price Specifications"
+  },
+  {
+   "fieldname": "price_specification_id",
+   "fieldtype": "Data",
+   "label": "Price Specification ID"
+  },
+  {
+   "fieldname": "price_specification_type",
+   "fieldtype": "Data",
+   "label": "Price Specification Type"
+  },
+  {
+   "fieldname": "price_specification_name_en",
+   "fieldtype": "Data",
+   "label": "Price Specification (English)"
+  },
+  {
+   "fieldname": "price_specification_name_ar",
+   "fieldtype": "Data",
+   "label": "Price Specification (Arabic)"
+  },
+  {
+   "fieldname": "column_break_jksj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "price_specification_gross",
+   "fieldtype": "Currency",
+   "label": "Price Specification Gross"
+  },
+  {
+   "fieldname": "price_specification_net",
+   "fieldtype": "Currency",
+   "label": "Price Specification Net"
+  },
+  {
+   "fieldname": "price_specification_vat",
+   "fieldtype": "Currency",
+   "label": "Price Specification VAT"
+  },
+  {
+   "fieldname": "duration_type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "duration_value",
+   "fieldtype": "Float",
+   "label": "Value"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-04 15:59:48.612956",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Packages",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
