@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:position_id",
+ "creation": "2025-08-04 15:48:51.607510",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "position_id",
+  "column_break_wuop",
+  "position_en",
+  "position_ar"
+ ],
+ "fields": [
+  {
+   "fieldname": "position_id",
+   "fieldtype": "Data",
+   "label": "Position Id",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_wuop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position_en",
+   "fieldtype": "Data",
+   "label": "Position (English)"
+  },
+  {
+   "fieldname": "position_ar",
+   "fieldtype": "Data",
+   "label": "Position (Arabic)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-04 15:52:12.049394",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Position",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "position_id,position_en,position_ar",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
