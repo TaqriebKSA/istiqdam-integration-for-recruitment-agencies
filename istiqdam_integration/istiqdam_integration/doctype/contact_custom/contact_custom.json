@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 14:33:11.729527",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "person_name",
+  "phone_number",
+  "email",
+  "column_break_kebd",
+  "mobile",
+  "second",
+  "home",
+  "work",
+  "redirect"
+ ],
+ "fields": [
+  {
+   "fieldname": "person_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Person Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_kebd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "second",
+   "fieldtype": "Data",
+   "label": "Second"
+  },
+  {
+   "fieldname": "home",
+   "fieldtype": "Data",
+   "label": "Home"
+  },
+  {
+   "fieldname": "work",
+   "fieldtype": "Data",
+   "label": "Work"
+  },
+  {
+   "fieldname": "redirect",
+   "fieldtype": "Data",
+   "label": "Redirect"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-04 14:39:25.521890",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Contact Custom",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
