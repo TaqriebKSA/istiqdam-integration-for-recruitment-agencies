@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-24 13:02:09.972219",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "tab_2_tab",
+  "istiqdam_section",
+  "enable_istiqdam_integration",
+  "istiqdam_base_url",
+  "column_break_zyes",
+  "istiqdam_client_id",
+  "istiqdam_api_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "istiqdam_section",
+   "fieldtype": "Section Break",
+   "label": "Istiqdam"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_istiqdam_integration",
+   "fieldtype": "Check",
+   "label": "Enable Istiqdam Integration"
+  },
+  {
+   "fieldname": "istiqdam_base_url",
+   "fieldtype": "Data",
+   "label": "Istiqdam Base URL"
+  },
+  {
+   "fieldname": "column_break_zyes",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "istiqdam_client_id",
+   "fieldtype": "Data",
+   "label": "Istiqdam Client Id"
+  },
+  {
+   "fieldname": "istiqdam_api_key",
+   "fieldtype": "Data",
+   "label": "Istiqdam Api Key"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-07-24 13:06:04.533245",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Integration Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
