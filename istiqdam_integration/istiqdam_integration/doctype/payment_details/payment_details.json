@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-04 14:40:38.751647",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "due_date",
+  "gross_price",
+  "column_break_lvyd",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Due Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gross_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lvyd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "DOWN_PAYMENT\nREGULAR_PAYMENT",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-04 14:44:50.178411",
+ "modified_by": "Administrator",
+ "module": "Istiqdam Integration",
+ "name": "Payment Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
