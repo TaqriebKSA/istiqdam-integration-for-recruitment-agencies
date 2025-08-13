@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:contract_id",
  "creation": "2025-08-04 16:14:43.114201",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,11 +12,11 @@
   "activated_at",
   "creation_date",
   "end_at",
-  "customer",
+  "benaficiary",
   "column_break_fhdw",
-  "employee",
-  "employee_name",
-  "employee_dob",
+  "customer",
+  "customer_name",
+  "cusotmer_dob",
   "special_specification",
   "job_type",
   "monthly_income",
@@ -49,7 +50,8 @@
    "fieldname": "contract_id",
    "fieldtype": "Data",
    "label": "Contract ID",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "start_at",
@@ -62,37 +64,13 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "in_filter": 1,
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Employee",
-   "options": "Employee",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "employee.full_name",
-   "fetch_if_empty": 1,
-   "fieldname": "employee_name",
-   "fieldtype": "Read Only",
-   "label": "Employee Name"
-  },
-  {
-   "fetch_from": "employee.date_of_birth",
-   "fetch_if_empty": 1,
-   "fieldname": "employee_dob",
-   "fieldtype": "Read Only",
-   "label": "Employee DOB"
-  },
-  {
    "fieldname": "package",
    "fieldtype": "Link",
    "in_filter": 1,
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Package",
-   "options": "Employee",
+   "options": "Customer",
    "reqd": 1
   },
   {
@@ -188,8 +166,12 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "fieldname": "activated_at",
@@ -242,7 +224,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Special Specification",
-   "options": "Employee"
+   "options": "Customer"
   },
   {
    "fieldname": "job_type",
@@ -251,7 +233,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Job Type",
-   "options": "Employee"
+   "options": "Customer"
   },
   {
    "fieldname": "monthly_income",
@@ -260,16 +242,37 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Monthly Income",
-   "options": "Employee"
+   "options": "Customer"
+  },
+  {
+   "fieldname": "benaficiary",
+   "fieldtype": "Link",
+   "label": "Benaficiary",
+   "options": "Benaficiary"
+  },
+  {
+   "fetch_from": "customer.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "customer.date_of_birth",
+   "fetch_if_empty": 1,
+   "fieldname": "cusotmer_dob",
+   "fieldtype": "Read Only",
+   "label": "Employee DOB"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-10 09:35:30.718316",
+ "modified": "2025-08-12 16:22:49.143906",
  "modified_by": "Administrator",
  "module": "Istiqdam Integration",
  "name": "Contract",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
